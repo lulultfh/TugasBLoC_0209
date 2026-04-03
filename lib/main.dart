@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tugasbloc/auth/login.dart';
+import 'package:tugasbloc/mainui/home.dart';
+import 'package:tugasbloc/page/order_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +33,12 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
+      initialRoute: '/login',
+      routes: {
+        '/login':(context) => const LoginPage(),
+        '/home':(context) => const HomePage(),
+        '/order':(context) => const OrderPage(),
+      },
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
