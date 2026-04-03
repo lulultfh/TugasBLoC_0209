@@ -6,3 +6,14 @@ abstract class AuthState extends Equatable {
 }
 class AuthInitial extends AuthState{}
 class AuthLoading extends AuthState{}
+
+class AuthAuthenticated extends AuthState {
+  final String email;
+  AuthAuthenticated({required this.email});
+
+  @override
+  List<Object?> get props => [email];
+}
+class AuthRegistered extends AuthState{}
+class AuthUnauthenticated extends AuthState{}
+
