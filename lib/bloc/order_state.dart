@@ -5,3 +5,6 @@ abstract class OrderState extends Equatable {
   List<Object?> get props => [];
 }
 
+class OrderInitial extends OrderState {}
+class OrderLoading extends OrderState {}
+
