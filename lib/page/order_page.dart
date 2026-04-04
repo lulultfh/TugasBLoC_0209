@@ -81,8 +81,8 @@ class _OrderPageState extends State<OrderPage> {
               builder: (context) => DetailOrderPage(
                 makanan: state.makanan,
                 minuman: state.minuman,
-                jumlahMakanan: state.jumlahMakanan.toString(),
-                jumlahMinuman: state.jumlahMinuman.toString(),
+                jumlahMakanan: state.jumlahMakanan,
+                jumlahMinuman: state.jumlahMinuman,
                 totalHarga: state.totalHarga,
               ),
             ),
