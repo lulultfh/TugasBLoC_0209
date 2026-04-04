@@ -22,3 +22,4 @@ class OrderSubmitted extends OrderEvent{
   List<Object?> get props => [makanan, minuman, jumlahMakanan, jumlahMinuman];
 }
 
+class OrderReset extends OrderEvent {}
